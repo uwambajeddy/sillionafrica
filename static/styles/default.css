@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "MontserratBold";
+    src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: "MontserratMedium";
+    src: url("../fonts/montserrat/Montserrat-Medium.ttf");
+}
+@font-face {
+    font-family: "MontserratRegular";
+    src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+
+
+
+:root {
+    --blue:#007bff;
+    --blue-second:#313599;
+    --blue-third:#2b108e;
+    --indigo:#6610f2;
+    --purple:#6f42c1;
+    --pink:#e83e8c;
+    --red:#dc3545;
+    --orange:#ff7f08;
+    --yellow:#ffc107;
+    --green:#28a745;
+    --teal:#20c997;
+    --cyan:#17a2b8;
+    --white:#fff;
+    --black:#000000c7;
+    --gray-dark:#343a40;
+    --primary:#007bff;
+    --secondary:#6c757d;
+    --success:#28a745;
+    --info:#17a2b8;
+    --warning:#ffc107;
+    --danger:#dc3545;
+    --light:#f8f9fa;
+    --dark:#343a40;
+    
+    --font-family-bold: 'MontserratBold', sans-serif;
+    --font-family-Medium: 'MontserratMedium', sans-serif;
+    --font-family-Regular: 'MontserratRegular', sans-serif;
+}

@@ -1,0 +1,135 @@
+
+.banner-section{
+    background: none;
+    height: auto;
+}
+
+    
+.owl-navigation   button{
+    background: black;
+    
+    }
+
+    .owl-carousel .owl-stage {
+        display: flex;
+    }
+
+ .owl-nav{
+    position: absolute;
+    top: 0px;
+    font-size: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+    
+    .owl-nav .owl-prev .owl-nav-prev,
+    .owl-nav .owl-next .owl-nav-next{
+        color: var(--white-color);
+        background: transparent;
+        font-size: 1rem;
+        
+    }
+     .owl-nav [class*='owl-']:hover{
+       cursor: pointer;
+    }
+    .owl-nav [class*='owl-']{
+        outline: none;
+    }
+
+    .owl-next,.owl-prev{
+        position: absolute;
+    height: 798px;
+        color: white !important;
+    top: 50%;
+}
+.owl-next{
+        right: 0;
+    }
+    .owl-prev{
+        left: 0;
+        
+    }
+    
+    .owl-nav span{
+        padding: 0 20px  !important;
+        display: flex;
+    }
+    .owl-nav span p{
+        font-size: 20px;
+        margin: 27px 3px;
+    }
+
+
+    .services-section{
+        padding: 60px 0;
+    }
+    
+    .services-section .container .title{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .services-section .container .title span{
+        color: var(--orange);
+    }
+    
+
+    .readmore-button{
+        background: none;
+        color: var(--orange);
+    font-size: 15px;
+    border: none;
+    padding: 0;
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+    margin: 0%;
+    width: fit-content;
+}
+.readmore-button:hover{
+        transform: scale(1.1);
+        border: none;
+    }
+    .readmore-button i{
+        font-size: 20px;
+        margin: auto;
+    }
+    
+    .category-comment{
+        padding:5px 0 20px 0;
+        color: var(--black);
+    }
+    .category-title{
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px 0 0 0;
+    }
+
+    .services-list{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .features-content::after{
+        content: "SERVICES";
+      }
+
+    .service-single{
+        width: 360px;
+        line-height: 1.8;
+        margin: 40px 20px 20px 0;
+    }
+    .service-single .single-image{
+        width: 360px;
+        height: 200px;
+        overflow: hidden;
+    }
+    .service-single img{
+    width:360px;
+    transition: all 0.8s ease-in-out;
+}
+    .service-single:hover > .single-image img{
+        transform: scale(1.2);
+    }
+    
+
+    
