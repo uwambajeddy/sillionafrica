@@ -1,16 +1,16 @@
 
 /*----------scroll detector---------*/
 
-let headerSection = document.querySelector(".header-section");
+let headerSection = document.querySelector(".second-nav");
 
 document.addEventListener("scroll",()=>{
-    if(window.scrollY > 84){
+    if(window.scrollY > 95){
         headerSection.style.position="fixed";
         headerSection.style.top=0;
         
     }else{
         headerSection.style.position="absolute";
-        headerSection.style.top="90px";
+        headerSection.style.top="95px";
        
     }
 })
@@ -65,3 +65,24 @@ $(document).ready(function () {
     AOS.init();
 
 });
+
+
+function create() {
+    let overlay1 = document.querySelector(".overlay");
+    let createUpdate = document.querySelector(".create-modal");
+    let closebutton1 = document.querySelector(".close-modal");
+  
+    let closeC = function () {
+      createUpdate.classList.add("hidden");
+      overlay1.classList.add("hidden");
+    };
+  
+    let openC = function () {
+      createUpdate.classList.remove("hidden");
+      overlay1.classList.remove("hidden");
+    };
+    openC();
+  
+    closebutton1.addEventListener("click", closeC);
+    overlay1.addEventListener("click", closeC);
+  }

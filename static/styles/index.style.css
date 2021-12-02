@@ -21,6 +21,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: -webkit-fill-available;
 }
     
     .owl-nav .owl-prev .owl-nav-prev,
@@ -39,9 +41,7 @@
 
     .owl-next,.owl-prev{
         position: absolute;
-    height: 798px;
         color: white !important;
-    top: 50%;
 }
 .owl-next{
         right: 0;
@@ -104,10 +104,7 @@
         padding: 10px 0 0 0;
     }
 
-    .services-list{
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
+    
 
     .features-content::after{
         content: "SERVICES";
@@ -117,6 +114,7 @@
         width: 360px;
         line-height: 1.8;
         margin: 40px 20px 20px 0;
+        padding: 0;
     }
     .service-single .single-image{
         width: 360px;
@@ -134,4 +132,9 @@
 
     .products-banner img{
         width: 100%;
+    }
+
+    .list-group-item-action span{
+        color: var(--orange);
+        font-size: 18px;
     }

@@ -1,0 +1,15 @@
+.service-single {
+    box-shadow: 0 0 10px #00000059;
+}
+
+.explorer-button {
+    border: none;
+}
+
+.category-title {
+    text-align: center;
+}
+
+.mail-button{
+    color: black;
+}

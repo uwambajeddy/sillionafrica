@@ -16,73 +16,92 @@
     
     <!-- ------------ AOS Library ------------------------- -->
     <link rel="stylesheet" href="./static/styles/aos.css">
+
+    <!-- ------------ BootStrap Library ------------------------- -->
+    <link rel="stylesheet" href="./static/styles/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     
     <!-- Custom Style   -->
     <link rel="stylesheet" href="./static/styles/styles.css">
     <link rel="stylesheet" href="./static/styles/index.style.css">
+    <link rel="stylesheet" href="./static/styles/custom_style.css">
     <title>Sillion Africa</title>
 </head>
 <body>
  
 
     <!-- ----------header-section-------- -->
-    <div class="logo-contact">
-      <div class="container">
-        <span class="nav-logo"><img src="./static/images/logo-orange.png"  alt="logo"></span>
-        <span>
-          <p><i class="pe-7s-call"></i> +250785004066</p>
-        <p><i class="pe-7s-mail-open"></i> info@sillionafrica.com</p>
-        <p><i class="pe-7s-map-marker"></i> kigali, Kimironko</p>
-      </span>
-        <span class="social-icons">
-          <a href="#"><i class="fab fa-google-plus-g"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class=" container">
+          <div class="row justify-content-between align-items-center">
+              <div class="nav-logo col-md-2 d-flex justify-content-between align-items-center">
+                <a class=" navbar-brand" href="#"><img src="./static/images/logo-orange.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div class="nav-contact col-md-8 d-none  d-lg-flex justify-content-center ">
+                  <p class="d-flex px-3 my-auto"><i class="px-1 pe-7s-call"></i> +250785004066</p>
+                  <p class="d-flex px-3 my-auto"><i class="px-1 pe-7s-mail-open"></i> info@sillionafrica.com</p>
+                  <p class="d-flex px-3 my-auto"><i class="px-1 pe-7s-map-marker"></i> kigali, Kimironko</p>
+              </div>
+              <div class="social col-md-2 d-none d-lg-flex justify-content-end ">
+                <a href="#" class="px-2"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="px-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="px-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="px-2"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
       </div>
-    </div>
-    <header class="header-section">
+    </nav>
+  <nav class="second-nav navbar navbar-expand-lg ">
       <div class="container">
-
-              
-        <div class="nav-links">
-          <ul>
-            <li data-aos="flip-up"  data-aos-delay="200"><a  class="link-hover" href="index.html">Home</a></li>
-            <li data-aos="flip-up"  data-aos-delay="400"><a class="link-hover" href="about.html">About Us</a></li>
-            <li data-aos="flip-up"  data-aos-delay="600"><a class="link-hover" href="services.html">Services</a>
-            <ul>
-              <li><a href="#">Video Conferencing Set-up</a> </li>
-              <li><a href="#">Cloud Solutions</a></li>
-              <li><a href="#">Structured Cabling</a></li>
-              <li><a href="#">VOIP Office Phone Systems</a></li>
-              <li><a href="#">IT Support And Maintenance</a></li>
-              <li><a href="#">CCTV Camera Sytems</a></li>
-              <li><a href="#">Fire Alarm And Suppression Systems</a></li>
-              <li><a href="#">Smart Home And Smart Office Solutions</a></li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto d-flex justify-content-between mb-2 mb-lg-0">
+            <li class="nav-item" data-aos="flip-up"  data-aos-delay="200">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             </li>
-            <li data-aos="flip-up" data-aos-delay="800"><a class="link-hover" href="#">Products</a>
-              <ul>
-                <li><a href="#">CCTV Cameras</a> </li>
-                <li><a href="#">Video Conferencing</a></li>
-                <li><a href="#">Switches</a></li>
-                <li><a href="#">Routers</a></li>
-                <li><a href="#">IP Phones</a></li>
-                <li><a href="#">Alarm Sytems</a></li>
-                <li><a href="#">Ethernet Cables</a></li>
-                <li><a href="#">Servers</a></li>
-                <li><a href="#">Microsoft Products</a></li>
-                <li><a href="#">Firewalls</a></li>
-                <li><a href="#">End Point Securities</a></li>
-                <li><a href="#">Fire Alarm And Suppression</a></li>
+            <li class="nav-item" data-aos="flip-up"  data-aos-delay="400">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-aos="flip-up"  data-aos-delay="600" id="services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="services">
+                  <li><a class="dropdown-item" href="#">Video Conferencing Set-up</a> </li>
+                  <li><a class="dropdown-item" href="#">Cloud Solutions</a></li>
+                  <li><a class="dropdown-item" href="#">Structured Cabling</a></li>
+                  <li><a class="dropdown-item" href="#">VOIP Office Phone Systems</a></li>
+                  <li><a class="dropdown-item" href="#">IT Support And Maintenance</a></li>
+                  <li><a class="dropdown-item" href="#">CCTV Camera Sytems</a></li>
+                  <li><a class="dropdown-item" href="#">Fire Alarm And Suppression Systems</a></li>
+                  <li><a class="dropdown-item" href="#">Smart Home And Smart Office Solutions</a></li>
               </ul>
             </li>
-            <li data-aos="flip-up" data-aos-delay="900"><a class="link-hover" href="./contact.html">Contact Us</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-aos="flip-up"  data-aos-delay="800" href="./products.html" id="products" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="products">
+                  <li><a class="dropdown-item" href="#">CCTV Cameras</a> </li>
+                  <li><a class="dropdown-item" href="#">Video Conferencing</a></li>
+                  <li><a class="dropdown-item" href="#">Switches</a></li>
+                  <li><a class="dropdown-item" href="#">Routers</a></li>
+                  <li><a class="dropdown-item" href="#">IP Phones</a></li>
+                  <li><a class="dropdown-item" href="#">Alarm Sytems</a></li>
+                  <li><a class="dropdown-item" href="#">Ethernet Cables</a></li>
+                  <li><a class="dropdown-item" href="#">Servers</a></li>
+                  <li><a class="dropdown-item" href="#">Microsoft Products</a></li>
+                  <li><a class="dropdown-item" href="#">Firewalls</a></li>
+                  <li><a class="dropdown-item" href="#">End Point Securities</a></li>
+                  <li><a class="dropdown-item" href="#">Fire Alarm And Suppression</a></li>
+                  </ul>
+            </li>
+            <li data-aos="flip-up" class="nav-item" data-aos-delay="900"><a  href="./contact.html" class="nav-link" >Contact Us</a></li>
           </ul>
         </div>
       </div>
-    </header>
+    </nav>
     <!-- -----x-----header-section-----x--- -->
     
     
@@ -105,10 +124,10 @@
 
         </div>
 
-        <div class="services-list">
+        <div class="row justify-content-center services-list">
           <!-- loop starts here -->
           
-          <div class="service-single" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-sm-6 col-md-4 col-lg-3 service-single" data-aos="fade-up" data-aos-delay="200">
             <div class="single-image">
               <img src="./static/images/video-conf.jpg" alt="">
             </div>
@@ -121,7 +140,7 @@
             </a>
           </div>
           
-          <div class="service-single" data-aos="fade-down" data-aos-delay="300">
+          <div class="col-sm-6 col-md-4 col-lg-3 service-single" data-aos="fade-down" data-aos-delay="300">
             <div class="single-image">
               <img src="./static/images/Cloud-s.jpg" alt="">
             </div>
@@ -134,7 +153,7 @@
             </a>
           </div>
           
-          <div class="service-single" data-aos="fade-left" data-aos-delay="400">
+          <div class="col-sm-6 col-md-4 col-lg-3 service-single" data-aos="fade-left" data-aos-delay="400">
             <div class="single-image">
               <img src="./static/images/structure-c.jpg" alt="">
             </div>
@@ -147,7 +166,7 @@
             </a>
           </div>
           
-          <div class="service-single" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-sm-6 col-md-4 col-lg-3 service-single" data-aos="fade-up" data-aos-delay="500">
             <div class="single-image">
               <img src="./static/images/voip.jpg" alt="">
             </div>
@@ -160,7 +179,7 @@
             </a>
           </div>
           
-          <div class="service-single" data-aos="fade-up" data-aos-delay="600">
+          <div class="col-sm-6 col-md-4 col-lg-3 service-single" data-aos="fade-up" data-aos-delay="600">
             <div class="single-image">
               <img src="./static/images/outsource-software-maintenance-and-support-services.jpg" alt="">
             </div>
@@ -173,7 +192,7 @@
             </a>
           </div>
           
-          <div class="service-single" data-aos="fade-left" data-aos-delay="700">
+          <div class="col-sm-6 col-md-4 col-lg-3 service-single" data-aos="fade-left" data-aos-delay="700">
             <div class="single-image">
               <img src="./static/images/Set-of-security-cameras-Premium-vector-PNG.png" alt="">
             </div>
@@ -186,7 +205,7 @@
             </a>
           </div>
           
-          <div class="service-single" data-aos="fade-right" data-aos-delay="800">
+          <div class="col-sm-6 col-md-4 col-lg-3 service-single" data-aos="fade-right" data-aos-delay="800">
             <div class="single-image">
               <img src="./static/images/fire-system.jpg" alt="">
             </div>
@@ -199,7 +218,7 @@
             </a>
           </div>
 
-          <div class="service-single" data-aos="fade-left" data-aos-delay="900">
+          <div class="col-sm-6 col-md-4 col-lg-3 service-single" data-aos="fade-left" data-aos-delay="900">
             <div class="single-image">
               <img src="./static/images/smart-home.jpg" alt="">
             </div>
@@ -223,9 +242,9 @@
 
         <div class="features-content">
          
-          <div class="main-section">
+          <div class="row justify-content-center main-section">
 
-            <div class="main-text">
+            <div class=" col-md-12 col-lg-6 main-text">
               <div class="section-name">
                 <p>OUR FEATURES</p>
               </div>
@@ -235,8 +254,8 @@
               <div class="section-content">
                 <p>With over 20 years of experience in business consulting, we have a lot to offer to our clients. Here are some reasons why companies worldwide choose us.</p>
               </div>
-              <div class="features-list">
-                <div class="feature-category" data-aos="fade-up" data-aos-delay="200">
+              <div class="row features-list">
+                <div class="col-md-12 feature-category" data-aos="fade-up" data-aos-delay="200">
                   <div class="feature-icon">
                     <i class="pe-7s-light"></i>
                   </div>
@@ -245,7 +264,7 @@
                     <p>Our services and solutions are built on business innovations.</p>
                   </div>
                 </div>
-                <div class="feature-category" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-12 feature-category" data-aos="fade-up" data-aos-delay="400">
                   <div class="feature-icon">
                     <i class="pe-7s-config"></i>
                   </div>
@@ -254,7 +273,7 @@
                     <p>Sillion Africa works strategically to forge the best path for your business.</p>
                   </div>
                 </div>
-                <div class="feature-category" data-aos="fade-up" data-aos-delay="600">
+                <div class="col-md-12 feature-category" data-aos="fade-up" data-aos-delay="600">
                   <div class="feature-icon">
                     <i class="pe-7s-rocket"></i>
                   </div>
@@ -263,7 +282,7 @@
                     <p>We employ the best consultants with more than 10 years of experience.</p>
                   </div>
                 </div>
-                <div class="feature-category" data-aos="fade-up" data-aos-delay="800">
+                <div class="col-md-12 feature-category" data-aos="fade-up" data-aos-delay="800">
                   <div class="feature-icon">
                     <i class="pe-7s-magic-wand"></i>
                   </div>
@@ -274,7 +293,7 @@
                 </div>
               </div>
             </div>
-            <div class="bg-image" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-6 bg-image" data-aos="fade-up" data-aos-delay="200">
               <img src="./static/images/college.jpg" alt="">
             </div>
           </div>
@@ -369,56 +388,46 @@
   
   <!-- --------------------- Footer section ----------------- -->
 
-  <section class="footer-section">
-       <div class="container">
-         <div class="footer-content">
-           
-           <div class="footer-flex">
-             <div class="footer-slice" data-aos="fade-right" data-aos-delay="200">
-               <div class="slice-title">
-                 <img src="./static/images/logo-orange.png" alt="">
-               </div>
-               <div class="slice-body">
-                 <p class="footer-about">Sillion Africa provides a full range of business consulting & advisory services to small, medium, and international companies worldwide. We use innovations and experience to drive your success.</p>
-               </div>
-             </div>
-             <div class="footer-slice" data-aos="fade-up" data-aos-delay="400">
-               <div class="slice-title">
-                 <p><span> CONTACT US </span></p>
-               </div>
-               <div class="slice-body">
-                  <p><i class="fa fa-phone"></i> +250785004066</p>
-                <p><i class="fa fa-envelope"></i> info@sillionafrica.com</p>
-                <p><i class="fa fa-map-marker-alt"></i> kigali, Kimironko</p>
-              
-               </div>
-             </div>
-             <div class="footer-slice" data-aos="fade-left" data-aos-delay="300">
-               <div class="slice-title">
-                 <p><span> QUICK LINKS </span></p>
-               </div>
-               <div class="slice-body">
-                 <span>
-                   <a href="index.html">Home</a>
-                   <a href="about.html">About Us</a>
-                   <a href="contact.html">Contact Us</a>
-                  </span>
+  <section class="footer-section py-5 bg-dark ">
+    <div class="container">
+        <div class="row text-light justify-content-between g-5">
+            <div class="col-lg-4 col-md-4 px-4" data-aos="fade-up" data-aos-delay="100">
+                <img src="./static/images/logo-orange.png" class="img-fluid" width="186px" alt="logo">
+                <p style="line-height:1.5">
+                  Sillion Africa provides a full range of business consulting & advisory services to small, medium, and international companies worldwide. We use innovations and experience to drive your success.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4" data-aos="fade-down" data-aos-delay="100">
+                <div class="px-lg-5">
+                    <p class="title pb-2">CONTACT US</p>
+                    <p><i class="fa fa-phone"></i> +250785004066</p>
+                    <p><i class="fa fa-envelope"></i> info@sillionafrica.com</p>
+                    <p><i class="fa fa-map-marker-alt"></i> kigali, Kimironko</p>
                   </div>
-             </div>
-
-          
+            </div>
+            <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <p class="title pb-2">QUICK LINKS</p>
+                <div class="d-flex flex-column">
+                    <a class="pb-2" href="index.html">Home</a>
+                    <a class="pb-2" href="about.html">About Us</a>
+                    <a class="pb-2" href="contact.html">Contact Us</a>
+                  </div>
+              </div>
         </div>
-        <div class="footer-copyright">
-          <p>© 2021. All Rights Reserved. Design by Sillion Africa</p> 
-          <div class="footer-icons">
-            <i class="pe-7s-facebook"></i>
-            <i class="pe-7s-instagram"></i>
-            <i class="pe-7s-twitter"></i>
+        <div class="row text-light pt-5 ">
+            <div class="col-md-6 order-md-2">
+                <div class="d-flex pb-3 justify-content-md-end">
+                    <a href="#" class="px-3"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="px-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="px-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="px-3"><i class="fab fa-instagram"></i></a>
+                  </div>
+              </div>
+              <p class="col-md-6 order-md-1">© 2021. All Rights Reserved. Design by Sillion Africa</p> 
           </div>
-        </div>
-        
-       </div>
+    </div>
 </section>
+
 
 <!-- ----------x---------- Testmony Carousel --------x-------- -->
 
@@ -431,8 +440,12 @@
     <!-- --------- Owl-Carousel js ------------------->
     <script src="./static/js/owl.carousel.min.js"></script>
     
+    <!-- ------------ BootStrap Library ------------------------- -->
+    <script src="./static/styles/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
     <!-- ------------ AOS js Library  ------------------------- -->
     <script src="./static/js/aos.js"></script>
+
     <!-- Custom Javascript file -->
     <script src="./static/js/main.js"></script>
     

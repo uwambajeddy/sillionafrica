@@ -1,0 +1,18 @@
+
+.categories-list span{
+    color: var(--orange);
+}
+
+
+.list-group a{
+    color: black !important;
+}
+
+.list-group-item.custom-active {
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+.list-group-item {
+    border: none;
+}

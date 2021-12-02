@@ -1,0 +1,16 @@
+.single-details{
+    position: relative;
+    color: white;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    transform: translate(0%, -400%);
+}
+.products-banner{
+    height: 300px;
+    overflow: hidden;
+}
+.products-banner img{
+    height: inherit;
+}
